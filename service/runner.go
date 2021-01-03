@@ -6,16 +6,20 @@ import (
 	"os/signal"
 
 	"github.com/rlaskowski/go-iothome/config"
+	"github.com/rlaskowski/go-iothome/registries"
 	"github.com/rlaskowski/go-iothome/router"
 )
 
 type Service struct {
-	http *router.HttpServer
+	http       *router.HttpServer
+	registries *registries.Registries
 }
 
 func New() *Service {
+	registries := registries.NewRegistries()
+
 	return &Service{
-		http: router.NewHttpServer(),
+		http: router.NewHttpServer(registries),
 	}
 }
 

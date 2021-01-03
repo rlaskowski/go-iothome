@@ -3,6 +3,7 @@ module github.com/rlaskowski/go-iothome
 go 1.14
 
 require (
+	github.com/bmizerany/pat v0.0.0-20170815010413-6226ea591a40
 	github.com/eclipse/paho.mqtt.golang v1.3.0 // indirect
 	github.com/gofrs/uuid v3.3.0+incompatible // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
@@ -13,7 +14,7 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/urfave/cli v1.22.5 // indirect
 	github.com/veandco/go-sdl2 v0.4.4 // indirect
-	gobot.io/x/gobot v1.15.0 // indirect
+	gobot.io/x/gobot v1.15.0
 	gocv.io/x/gocv v0.25.0 // indirect
 	golang.org/x/crypto v0.0.0-20201221181555-eec23a3978ad // indirect
 	golang.org/x/net v0.0.0-20201224014010-6772e930b67b // indirect
